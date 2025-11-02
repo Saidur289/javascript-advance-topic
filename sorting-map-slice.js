@@ -122,5 +122,20 @@ const tagsFromPosts = [
 const filterTags = [... new Set(tagsFromPosts.flat())]
 console.log(filterTags);
 const currentUserRoles = ["user", "editor", "admin"];
-
+// SOME METHOD 
 const featureAccessRoles = ["admin", "manager"];
+
+const nums = [12, 34, 35]
+const hasEven = nums.some((n) => n % 2 === 0);
+// console.log(hasEven);
+const userAccess = ['user', 'editor', "admin"];
+const adminAccess = ['admin', 'manager']
+const hasAccess = userAccess.some((role) => adminAccess.includes(role))
+console.log(hasAccess);
+// ARRAY FORM
+const arrs = Array.from({length: 5}, (_, i) => i)
+console.log(arrs);
+
+// RANGE 
+const range = (start,stop, step) => Array.from({length: (Math.ceil(stop - start)/ step)}, (_, i) => start + i * step)
+ console.log(range(1, 11, 1));
